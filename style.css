@@ -25,6 +25,9 @@ nav a {
   padding: 3px;
   background: #477ff7;
 }
+nav a:hover{
+  background-color: #1d64ff;
+}
 nav b {
   color: darkgray;
   text-decoration: none;
@@ -49,4 +52,11 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+.video{
+  padding: 15px;
+  max-height: 350px;
+}
+.centro{
+  text-align: center;
 }
