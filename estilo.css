@@ -18,22 +18,22 @@ nav {
   padding: 5px;
 }
 nav a {
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  margin: 0 15px;
+  border-radius: 10px;
+  padding: 3px;
+}
+nav a:hover{
+  background-color: #1d64ff;
+}
+nav b {
   color: white;
   text-decoration: none;
   margin: 0 10px;
   border-radius: 10px;
   padding: 5px;
   background: #477ff7;
-}
-nav a:hover{
-  background-color: #1d64ff;
-}
-nav b {
-  color: darkgray;
-  text-decoration: none;
-  margin: 0 10px;
-  border-radius: 10px;
-  padding: 3px;
   
 }
 section {
@@ -59,4 +59,14 @@ img {
 }
 .centro{
   text-align: center;
+}
+.botaoy{
+  max-width: 30%;
+  height: auto;
+  size: 10px;
+}
+.botaoi{
+  max-width: 15%;
+  height: auto;
+  size: 10px;
 }
