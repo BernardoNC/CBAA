@@ -70,3 +70,35 @@ img {
   height: auto;
   size: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Estilo para o link "Inscrições" */
+.nav-hover a {
+  text-decoration: none;
+  position: relative;
+}
+
+/* Estilo para as opções no dropdown */
+.nav-options {
+  display: none;
+  position: relative;
+  list-style-type: none;
+  padding: 5px;
+}
+
+/* Mostra as opções quando o link "Inscrições" é hoverado */
+.nav-hover a:hover + .nav-options {
+  display: block;
+}
+.nav-options:hover {
+  display: block;
+}
+
