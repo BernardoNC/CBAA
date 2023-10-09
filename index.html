@@ -21,7 +21,7 @@
             <b href="index.html">Página inicial</b>
             <a href="Apresentação.html">História do evento</a>
             <a href="contato.html">Contato</a>
-            <!-- <a href="programacao.html">Programação</a> --> 
+            <!-- <a href="programacao.html">Programação</a>   https://youtu.be/HyBKbNmPVgk --> 
             <a href="trabalhos.html">Trabalhos</a>
             <a href="fotos.html">Concurso de fotos</a>
             <a href="https://drive.google.com/drive/folders/1KQxYZkOTPXbiGCnx25Teg38CrOuW9sC1?usp=sharing" target="_blank">Anais</a>
@@ -40,9 +40,41 @@
     <section>
         <h2 class="is-size-3 has-text-weight-bold">Evento</h2>
         <div class="centro">
-            <video class="video" src="Petropolis.mp4" autoplay muted loop></video>
-        </div> 
+            <div id="player"></div>
+        </div>
     </section>
     <section><img src="Apoio.png" alt="Apoio"></section>
+
+    <script>
+        // Inclua o script da API do YouTube
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Variável para armazenar o objeto do player
+        var player;
+
+        // Função chamada quando a API do YouTube estiver pronta
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '315',
+                width: '560',
+                videoId: 'HyBKbNmPVgk', 
+                playerVars: {
+                    'loop': 1,  // Ativar loop
+                    'autoplay': 1,  // Reprodução automática
+                    'controls': 0,  // Ocultar controles do player
+                    'showinfo': 0,  // Ocultar informações do vídeo
+                    'rel': 0,  // Ocultar vídeos relacionados
+                },
+                events: {
+                    'onReady': function (event) {
+                        event.target.playVideo();
+                    },
+                }
+            });
+        }
+    </script>
 </body>
 </html>
